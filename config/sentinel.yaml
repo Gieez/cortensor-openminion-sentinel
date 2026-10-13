@@ -1,0 +1,25 @@
+sentinel:
+  version: "1.0.0"
+  agent_name: "cortensor-sentinel"
+  network: "cortensor-mainnet-alpha"
+  default_provider: "cortensor"
+  
+pouw:
+  rebate_multiplier: 0.05
+  base_cor_exchange_rate: 0.15 # 1 COR = $0.15 USD
+  standard_validator_tier: "alpha-tier-1"
+  epoch_length_blocks: 100
+
+audit:
+  max_contract_size_bytes: 1048576 # 1 MB
+  vulnerability_classes:
+    - "reentrancy"
+    - "access_control"
+    - "arithmetic_overflow"
+    - "unchecked_call"
+    - "tx_origin_auth"
+    - "front_running"
+
+session_verification:
+  hashing_algorithm: "sha256"
+  erc8004_task_format: "cortensor:alpha:v1"

@@ -1,0 +1,37 @@
+[
+  {
+    "component": "OpenMinion Tool: contract_auditor",
+    "operation": "Static AST & Regex pattern audit",
+    "latency_ms": 1.09,
+    "status": "PASS",
+    "notes": "Detected 3 vulns (Score: 35/100)"
+  },
+  {
+    "component": "OpenMinion Tool: pouw_calculator",
+    "operation": "Tier-2 PoUW gas rebate computation",
+    "latency_ms": 0.02,
+    "status": "PASS",
+    "notes": "3.8307 $COR (0.000221 ETH)"
+  },
+  {
+    "component": "OpenMinion Tool: session_validator",
+    "operation": "ERC-8004 TaskRoot + SessionRoot hashing",
+    "latency_ms": 0.06,
+    "status": "PASS",
+    "notes": "Root: d3f7f7636529... (Valid: True)"
+  },
+  {
+    "component": "OpenMinion Storage / History",
+    "operation": "Durable SQLite session persistence & query",
+    "latency_ms": 2.88,
+    "status": "PASS",
+    "notes": "Persisted & retrieved run bench-01"
+  },
+  {
+    "component": "Sentinel End-to-End Orchestrator",
+    "operation": "Full security audit + PoUW + ERC-8004 report",
+    "latency_ms": 21693.32,
+    "status": "PASS",
+    "notes": "Report ID: sentinel-68443afd (deterministic-sentinel-core)"
+  }
+]
